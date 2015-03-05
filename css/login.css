@@ -28,7 +28,7 @@ html,
 body {
   height: 100%;
   /*background-color: #333;*/
-  background-image: url('../img/city.jpg');
+  background-image: url('../img/bg/bg2.png');
 }
 body {
   color: #fff;
@@ -128,8 +128,7 @@ input[type=checkbox]:checked + label:before { letter-spacing: 5px; } /* allow sp
   width: 100%;
   height: 100%; /* For at least Firefox */
   min-height: 100%;
-  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+  
 }
 .site-wrapper-inner {
   display: table-cell;
@@ -142,7 +141,7 @@ input[type=checkbox]:checked + label:before { letter-spacing: 5px; } /* allow sp
 
 /* Padding for spacing */
 .inner {
-  padding: 30px;
+  padding-top: 20px;
 }
 
 
@@ -152,20 +151,23 @@ input[type=checkbox]:checked + label:before { letter-spacing: 5px; } /* allow sp
 .masthead-brand {
   margin-top: 10px;
   margin-bottom: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 50px;
 }
 
 .masthead-nav > li {
   display: inline-block;
 }
 .masthead-nav > li + li {
-  margin-left: 20px;
+  margin-left: 50px;
 }
 .masthead-nav > li > a {
   padding-right: 0;
   padding-left: 0;
   font-size: 16px;
   font-weight: bold;
-  color: #fff; /* IE8 proofing */
   color: rgba(255,255,255,.75);
   border-bottom: 2px solid transparent;
 }
