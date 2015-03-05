@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Profile</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../css/profile_02.css" rel="stylesheet">
+    <!-- Custom fonts -->
+    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,700,900' rel='stylesheet' type='text/css'>
+
+  </head>
+
+  <body>
+
+
+    <div class="bg"></div>
+      <div class="jumbotron">
+        <div class="container">
+          
+        </div>
+      </div>
+
+    <div class="stats-container">
+      <div class="stats-subcontainer">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="stat-item">
+              <div class="stat">0000</div>
+              <h2>Weight Lifted</h2>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="stat-item">
+              <div class="stat">0000</div>
+              <h2>WODs Logged</h2>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="stat-item">
+              <div class="stat">0000</div>
+              <h2>Goals Met</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#"><i class="fa fa-user"></i> Profile <span class="sr-only">(current)</span></a></li>
+            <li><a href="#"><i class="fa fa-pencil"></i> Log</a></li>
+            <li><a href="#"><i class="fa fa-check-square-o"></i> Goals</a></li>
+          </ul>
+        </div>
+      </div>  
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/docs.min.js"></script>
+    <script src="../js/jquery.js"></script>
+
+    <script type="text/javascript">
+    var jumboHeight = $('.jumbotron').outerHeight();
+    function parallax(){
+        var scrolled = $(window).scrollTop();
+        $('.bg').css('height', (jumboHeight-scrolled) + 'px');
+    }
+    $(window).scroll(function(e){
+        parallax();
+    });
+    </script>
+  </body>
+</html>

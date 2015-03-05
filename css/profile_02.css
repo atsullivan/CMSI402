@@ -1,0 +1,105 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  padding-left: 213px;
+}
+
+.bg {
+  background: url('../img/ocean.jpg') no-repeat center center;
+  position: fixed;
+  width: 100%;
+  height: 300px; /*same height as jumbotron */
+  top:0;
+  left:0;
+  z-index: -1;
+  /*opacity: 0.4;*/
+  margin-left: 213px;
+}
+
+.jumbotron {
+  margin-bottom: 0px;
+  height: 300px;
+  color: white;
+  text-shadow: #444 0 1px 1px;
+  background:transparent;   
+}
+
+.stats-container {
+  text-align: center;
+  padding-left: 150px;
+  padding-right: 150px;
+  font-family: lato;
+}
+
+.stats-subcontainer {
+  border-top: 2px solid #f5f5f5;
+  border-bottom: 2px solid #f5f5f5;
+}
+
+.stat-item {
+  border-right: 2px solid #f5f5f5;
+  border-left: 2px solid #f5f5f5;
+}
+
+.stat {
+  font-size: 75px;
+}
+
+.sidebar {
+  display: none;
+  /*margin-top: 300px;*/
+}
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+  }
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #214665;
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
